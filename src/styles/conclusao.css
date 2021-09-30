@@ -1,0 +1,38 @@
+body {
+    background: #FFE25E;
+}
+
+button {
+    border-radius: 30px;
+    width: 100px;
+    height: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#playAgainButton {
+    background: #3915B0;
+}
+
+#menuButton {
+    background: #FF960F;
+}
+
+.conclusionDataBox {
+    margin-top: auto;
+    margin-left: 0%;
+    font: Roboto;
+    width: 300px;
+    height: 213px;
+    left: 46px;
+    top: 78px;
+    background: #0FBFFF;
+    border-radius: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+}
