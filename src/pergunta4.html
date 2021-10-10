@@ -8,28 +8,43 @@
     <title>Pergunta 1</title>
 </head>
 <body>
-    <div>
-        <div class="questionBox">
-            <h4>Pergunta 4</h4>
-        </div>
-
+    
+    <h4>
+        <div class="questionBox">Pergunta 4</div>
+    </h4>
         <form method="GET" action='conclusao.html'>
-            <input type="radio" id="seguranca fisica" name="alternativa" value="a">
-            <label for="seguranca fisica">Alternativa 1</label><br>
+            <div id="options">
+                <input type="radio" id="seguranca fisica" name="alternativa" value="a" class="questionInputRadio">
+                <label for="seguranca fisica">
+                    <div class="questionOption" id="firstOption">
+                        Alternativa 1
+                    </div>
+                </label>
 
-            <input type="radio" id="seguranca cibertica" name="alternativa" value="b">
-            <label for="seguranca cibertica">Alternativa 2</label><br>
+                <input type="radio" id="seguranca cibertica" name="alternativa" value="b" class="questionInputRadio">
+                <label for="seguranca cibertica">
+                    <div class="questionOption" id="SecondOption">
+                        Alternativa 2
+                    </div>
+                </label>
 
-            <input type="radio" id="seguranca patrimonial" name="alternativa" value="c">
-            <label for="seguranca patrimonial">Alternativa 3</label><br>
+                <input type="radio" id="seguranca patrimonial" name="alternativa" value="c" class="questionInputRadio">
+                <label for="seguranca patrimonial">
+                    <div class="questionOption" id="thirdOption">
+                        Alternativa 3
+                    </div>
+                </label>
 
-            <input type="radio" id="seguranca monetaria" name="alternativa" value="d">
-            <label for="seguranca monetaria">Alternativa 4</label><br>
-
-            <br><br>
-            <input type="submit" value="Submeter">
+                <input type="radio" id="seguranca monetaria" name="alternativa" value="d" class="questionInputRadio">
+                <label for="seguranca monetaria">
+                    <div class="questionOption" id="fourthOption">
+                        Alternativa 4
+                    </div>
+                </label>
+            </div>
+            <div id="submitButtonDiv">
+                <input type="submit" value="Submeter" id="submitButton">
+            </div>
         </form> 
-        
-    </div>
 </body>
 </html>
