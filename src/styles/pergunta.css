@@ -46,6 +46,10 @@ button {
     margin: 10px
 }
 
+.questionOption:hover {
+    border: 1px solid #0E9523;
+}
+
 #options {
     width: fit-content;
     height: 130px;
@@ -72,7 +76,11 @@ button {
 
 #fourthOption {
     border-bottom: 10px solid #3915B0;
-    color: #3915B0
+    color: #3915B0;
+}
+
+#selectedOption {
+    border: 10px #0E9523 ;
 }
 
 #submitButton {
