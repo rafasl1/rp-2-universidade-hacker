@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/pergunta.css">
+    <script src="/src/scripts/styles.js"></script>
     <title>Pergunta 1</title>
 </head>
 <body>
@@ -16,28 +17,28 @@
             <div id="options">
                 <input type="radio" id="seguranca fisica" name="alternativa" value="a" class="questionInputRadio">
                 <label for="seguranca fisica">
-                    <div class="questionOption" id="firstOption">
+                    <div class="questionOption" id="firstOption" onclick="selectFirstOption()">
                         Alternativa 1
                     </div>
                 </label>
 
                 <input type="radio" id="seguranca cibertica" name="alternativa" value="b" class="questionInputRadio">
                 <label for="seguranca cibertica">
-                    <div class="questionOption" id="SecondOption">
+                    <div class="questionOption" id="SecondOption" onclick="selectSecondOption()">
                         Alternativa 2
                     </div>
                 </label>
 
                 <input type="radio" id="seguranca patrimonial" name="alternativa" value="c" class="questionInputRadio">
                 <label for="seguranca patrimonial">
-                    <div class="questionOption" id="thirdOption">
+                    <div class="questionOption" id="thirdOption" onclick="selectThirdOption()">
                         Alternativa 3
                     </div>
                 </label>
 
                 <input type="radio" id="seguranca monetaria" name="alternativa" value="d" class="questionInputRadio">
                 <label for="seguranca monetaria">
-                    <div class="questionOption" id="fourthOption">
+                    <div class="questionOption" id="fourthOption" onclick="selectFourthOption()">
                         Alternativa 4
                     </div>
                 </label>
