@@ -50,11 +50,6 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     font-size: large;
-    transition: 0.3s;
-}
-
-.questionOption:hover {
-    border: 2px solid #0E9523;
 }
 
 #options {
@@ -71,26 +66,42 @@ button {
 
 #firstOption {
     border-bottom: 20px solid #0FBFFF;
-    color: #0FBFFF
+    color: #0FBFFF;
+    transition: 0.5s;
+}
+
+#firstOption:hover {
+    border: 4px solid #0FBFFF;
 }
 
 #SecondOption {
     border-bottom: 20px solid #FF960F;
-    color: #FF960F
+    color: #FF960F;
+    transition: 0.5s;
+}
+
+#SecondOption:hover {
+    border: 4px solid #FF960F;
 }
 
 #thirdOption {
     border-bottom: 20px solid #1E91E8;
-    color: #1E91E8
+    color: #1E91E8;
+    transition: 0.5s;
+}
+
+#thirdOption:hover {
+    border: 4px solid #1E91E8;
 }
 
 #fourthOption {
     border-bottom: 20px solid #3915B0;
     color: #3915B0;
+    transition: 0.5s;
 }
 
-#selectedOption {
-    border: 10px #0E9523 ;
+#fourthOption:hover {
+    border: 4px solid #3915B0;
 }
 
 #submitButton {
@@ -116,4 +127,8 @@ button {
 #submitButtonDiv {
     text-align: center;
     margin-right: 0%;
+}
+
+.selectedOption {
+    border: 10px #0E9523 ;
 }
