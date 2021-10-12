@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/pergunta.css">
+    <script src="../scripts/selectOption.js"></script>
     <title>Pergunta</title>
 </head>
 <body>
@@ -19,28 +20,28 @@
         <div id="options">
             <input type="radio" id="alternativa1" name="alternativa" value="a" class="questionInputRadio">
             <label for="alternativa1">
-                <div class="questionOption" id="firstOption">
+                <div class="questionOption" id="firstOption" onclick="selectOption('firstOption')">
                     No cinema, pois é um lugar mais reservado
                 </div>
             </label>
 
             <input type="radio" id="alternativa2" name="alternativa" value="b" class="questionInputRadio">
             <label for="alternativa2">
-                <div class="questionOption" id="SecondOption">
+                <div class="questionOption" id="SecondOption" onclick="selectOption('SecondOption')">
                     No parque, pois é um lugar público com mais pessoas por perto
                 </div>
             </label>
 
             <input type="radio" id="alternativa3" name="alternativa" value="c" class="questionInputRadio">
             <label for="alternativa3">
-                <div class="questionOption" id="thirdOption">
+                <div class="questionOption" id="thirdOption" onclick="selectOption('thirdOption')">
                     No restaurante, nada melhor do que comer algo juntos!
                 </div>
             </label>
 
             <input type="radio" id="alternativa4" name="alternativa" value="d" class="questionInputRadio">
             <label for="alternativa4">
-                <div class="questionOption" id="fourthOption">
+                <div class="questionOption" id="fourthOption" onclick="selectOption('fourthOption')">
                     Nenhum! Os “amigos da Internet” podem não ser quem eles dizem que são. 
                     Portanto, você nunca deve marcar um encontro com eles na vida real.
                 </div>
