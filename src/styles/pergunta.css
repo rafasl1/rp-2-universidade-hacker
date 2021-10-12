@@ -4,9 +4,8 @@ body {
 
 button {
     border-radius: 30px;
-    width: 65px;
+    width: 200px;
     height: 26px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -14,16 +13,18 @@ button {
 
 .questionBox {
     text-align: center;
-    font: Roboto;
-    width: 300px;
-    height: 200px;
-    line-height: 200px;
+    width: 700px;
+    height: 150px;
     background: #FFFFFF;
     border-radius: 20px;
-    text-align: center;
-    vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: x-large;
 }
 
 .questionInputRadio {
@@ -32,22 +33,23 @@ button {
 
 .questionOption {
     background: white;
-    height: 100px;
-    line-height: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
     text-align: center;
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
     display: flex;
     flex-direction: column;
     float: left;
-    margin: 10px
-}
-
-.questionOption:hover {
-    border: 1px solid #0E9523;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
 }
 
 #options {
@@ -56,34 +58,54 @@ button {
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
+    border: 1px solid #FFC173;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: table;
 }
 
 #firstOption {
-    border-bottom: 10px solid #0FBFFF;
-    color: #0FBFFF
+    border-bottom: 20px solid #0FBFFF;
+    color: #0FBFFF;
+    transition: 0.5s;
+}
+
+#firstOption:hover {
+    border: 4px solid #0FBFFF;
 }
 
 #SecondOption {
-    border-bottom: 10px solid #FF960F;
-    color: #FF960F
+    border-bottom: 20px solid #FF960F;
+    color: #FF960F;
+    transition: 0.5s;
+}
+
+#SecondOption:hover {
+    border: 4px solid #FF960F;
 }
 
 #thirdOption {
-    border-bottom: 10px solid #1E91E8;
-    color: #1E91E8
+    border-bottom: 20px solid #1E91E8;
+    color: #1E91E8;
+    transition: 0.5s;
+}
+
+#thirdOption:hover {
+    border: 4px solid #1E91E8;
 }
 
 #fourthOption {
-    border-bottom: 10px solid #3915B0;
+    border-bottom: 20px solid #3915B0;
     color: #3915B0;
+    transition: 0.5s;
 }
 
-#selectedOption {
-    border: 10px #0E9523 ;
+#fourthOption:hover {
+    border: 4px solid #3915B0;
 }
 
 #submitButton {
-    border-radius: 5px;
+    border-radius: 20px;
     color: white;
     background-color: #3915B0;
     width: 100px;
@@ -91,8 +113,22 @@ button {
     margin: auto;
     margin-top: 10px;
     vertical-align: middle;
+    border: 0px;
+    width: 200px;
+    height: 70px;
+    font-size: large;
+    transition: 0.5s;
+}
+
+#submitButton:hover {
+    background-color: #511ff8;
 }
 
 #submitButtonDiv {
     text-align: center;
+    margin-right: 0%;
+}
+
+.selectedOption {
+    border: 10px #0E9523 ;
 }
