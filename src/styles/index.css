@@ -3,35 +3,74 @@ body {
 }
 
 button {
-    border-radius: 30px;
+    border-radius: 20px;
     width: 65px;
     height: 26px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     text-align: center;
+    border: 0px;
 }
 
 
 #playButton {
     color: #FFFFFF;
     background-color: black;
+    width: 200px;
+    height: 70px;
+    font-size: x-large;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+#playButton:hover {
+    border: 5px solid white;
+    opacity: 1;
 }
 
 #menuButtons {
     position: absolute;
     width: 453px;
-    height: 1024px;
-    left: 987px;
+    height: 940px;
+    left: 1425px;
     top: -1px;
     background: #1E91E8;
+    text-align: center;
+    display: table;
 }
 
 .menuButton {
-    width: 120px;
-    height: 50px;
+    width: 200px;
+    height: 70px;
     left: 1020px;
     top: 190px;
     background: rgba(57, 21, 176, 0.6);
     color: #FFFFFF;
+    margin: 10px;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.menuButton:hover {
+    background: rgba(57, 21, 176, 0.9);;
+}
+
+#logoAndPlay {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+}
+
+#coisa {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 100px;
+    border: 1px solid;
+}
+
+.title {
+    color: white;
+    font-size: xx-large;
 }
