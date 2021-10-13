@@ -1,0 +1,199 @@
+[
+    {
+        "Titulo": "O que deve ser feito após receber um email com um assunto hilário que obviamente é scam?",
+        "Alternativa_1": "Deletá-lo e esquecer.",
+        "Alternativa_2": "Evitar clicar em qualquer link e marcá-lo como spam.",
+        "Alternativa_3": "Enviá-lo aos amigos para que eles também riam, mas avisá-los para não clicarem em nenhum link.",
+        "Alternativa_4": "Acessar os links contidos no email.",
+        "resposta": 2,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "O que fazer ao ver um bracelete de diamantes verdadeiros (que sua avó adoraria ganhar) sendo anunciado por apenas 25 reais?",
+        "Alternativa_1": "Ignorar, pois parece ser bom demais para ser verdade.",
+        "Alternativa_2": "Pegar o cartão de crédito dos pais e comprá-lo imediatamente.",
+        "Alternativa_3": "Enviar o anúncio aos amigos para que eles também possam comprá-lo.",
+        "Alternativa_4": "Acessar o site e pegar também as outras ofertas inacreditáveis.",
+        "resposta": 1,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "O que fazer ao receber um email de um primo do qual você literalmente nunca ouviu falar contendo um anexo e uma mensagem que diz: 'Você não vai acreditar nisso!'?",
+        "Alternativa_1": "Abrir o anexo, quem mandou é da família!",
+        "Alternativa_2": "Deletá-lo e avisar um adulto que seu primo pode ter sido hackeado.",
+        "Alternativa_3": "Responder o email e perguntar o que o anexo continha.",
+        "Alternativa_4": "Marcar com o novo primo de se encontrarem e conhecê-lo pessoalmente.",
+        "resposta": 2,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "Você acessa seu email pelo computador da biblioteca. O que deveria fazer para ter certeza de que sua conta está segura?",
+        "Alternativa_1": "Sair da conta ao acabar o que precisava fazer.",
+	"Alternativa_2": "Usar o navegador em uma aba anônima.",
+        "Alternativa_3": "Usar o navegador em uma aba anônima e sair da conta ao acabar o que precisava fazer.",
+        "Alternativa_4": "Agir como se fosse o computador de casa.",
+        "resposta": 3,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "Você recebe um email de uma corrente pedindo para que o envie a 10 amigos, e em troca você ganha um celular de última geracão. O que fazer? ",
+        "Alternativa_1": "Deletar o email e avisar o amigo que enviou que ele pode ter sido hackeado.",
+        "Alternativa_2": "Enviá-lo a 10 amigos. Mesmo podendo ser um email falso, o que custa tentar?",
+        "Alternativa_3": "Mandar para 20 amigos e ganhar 2 celulares.",
+        "Alternativa_4": "Enviá-lo incessantemente e ganhar o maior número possível de celulares.",
+        "resposta": 1,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "O que fazer quando alguma pessoa online te faz perguntas que o deixam realmente desconfortável?",
+        "Alternativa_1": "Tentar responder as perguntas da melhor maneira possível e salvar o contato.",
+        "Alternativa_2": "Apenas ignorar.",
+        "Alternativa_3": "Fazer uma captura de tela contendo o as mensagens e o usuário que as enviou para poder mostrar a um adulto em quem você confie.",
+        "Alternativa_4": "Xingar a pessoa.",
+        "resposta": 3,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "O que fazer se aparecer um anúncio com o link de um site oferecendo um videogame gratuito enquanto você navega pela internet?",
+        "Alternativa_1": "Ao invés de clicar no anúncio, digitar o endereco do site manualmente em uma nova aba.",
+        "Alternativa_2": "Clicar no anúncio imediatamente para não perder essa oportunidade única.",
+        "Alternativa_3": "Apenas ignorá-lo",
+        "Alternativa_4": "Enviar o site aos amigos para que todos consigam o videogame.",
+        "resposta": 3,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "O que você pode fazer para prevenir suas contas de serem hackeadas?",
+        "Alternativa_1": "Compartilhar suas senhas com seus amigos.",
+        "Alternativa_2": "Compartilhar suas senhas apenas com seus pais e mais ninguém.",
+        "Alternativa_3": "Criar senhas únicas e super difíceis de serem advinhadas.",
+        "Alternativa_4": "Criar senhas únicas super difíceis de serem advinhadas e não compartilhá-las com ninguém.",
+        "resposta": 4,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+
+      {
+        "Titulo": "Oops... Você usou o cartão de crédito dos seus pais para pagar um aplicativo de músicas, mas depois percebeu que era um aplicativo falso. E agora, o que fazer? ",
+        "Alternativa_1": "Avisá-los imediatamente.",
+        "Alternativa_2": "Fechar o aplicativo e fingir que isso nunca aconteceu.",
+        "Alternativa_3": "Tentar usar o aplicativo mesmo assim.",
+        "Alternativa_4": "Esconder isso deles.",
+        "resposta": 1,
+        "nivel": "iniciante",
+        "link_video":"link_video"
+      },
+       {
+        "Titulo": "Conjunto de práticas que protege informação armazenada nos computadores e aparelhos de computação e transmitida através das redes de comunicação, incluindo a Internet e telefones celulares. ",
+        "Alternativa_1": "Segurança Física.",
+        "Alternativa_2": "Segurança Cybernética.",
+        "Alternativa_3": "Segurança Patrimonial.",
+        "Alternativa_4": "Segurança Pessoal.",
+        "resposta": 2,
+        "nivel": "avançado",
+        "link_video":"link_video"
+      },
+     {
+        "Titulo": "Qual das seguintes características pode denunciar um email de fishing? ",
+        "Alternativa_1": "Email com erros de portugûes e com um email de remetente desconhecido.",
+        "Alternativa_2": "Email com remetente conhecido e com assunto inesperado.",
+        "Alternativa_3": "Email com erros de português de um colega de trabalho.",
+        "Alternativa_4": "Email com remetente conhecido e com esperadol.",
+        "resposta": 1,
+        "nivel": "avançado",
+        "link_video":"link_video"
+      },
+      {
+        "Titulo": "Qual das afirmativas abaixo contém somente dados pessoais sensíveis? ",
+        "Alternativa_1": "Nome, CPF, Estado civil, Username.",
+        "Alternativa_2": "CPF, RG, Endereço completo, Senha de acesso a um site.",
+        "Alternativa_3": "RG, Endereço Completo, CEP, Telefone.",
+        "Alternativa_4": "Telefone, Nome, RG, CPF.",
+        "resposta": 2,
+        "nivel": "avançado",
+        "link_video":"link_video"
+      },
+       {
+    	"Titulo": "Qual é a melhor maneira de baixar algum programa em seu computador?",
+    	"Alternativa_1": "Baixá-lo direto do site do desenvolvedor.",
+    	"Alternativa_2": "Baixá-lo de alguma página na web da qual você não sabe a procedência.",
+    	"Alternativa_3": "Baixá-lo através do link enviado por algum amigo sem antes verificá-lo",
+    	"Alternativa_4": "Baixá-lo através do site com boões mais bonitos e chamativos.",
+    	"resposta": 1,
+    	"nivel": "Intermediário",
+    	"link_video": ""
+  	},
+
+  	{
+    	"Titulo": " Alguém que você não conhece pediu para adicioná-lo à sua lista de contatos (no Skype, nas redes sociais, no bate-papo, etc.). O que fazer?",
+    	"Alternativa_1": "Adicioná-lo imediatamente, seu nickname é muito legal!",
+    	"Alternativa_2": "Adicioná-lo e mandar uma mensagem perguntando quem é.",
+    	"Alternativa_3": "Ignorar.",
+    	"Alternativa_4": "Negar a solicitacão.",
+    	"resposta": 4,
+    	"nivel": "Intermediário",
+    	"link_video": ""
+  	},
+  	
+  	{
+	"Titulo": "Um amigo se ofereceu para ajudá-lo com um programa de e-mail ou qualquer outra coisa e pede que você informe a senha de seu e-mail, para definir as configurações necessárias. O que fazer?",
+	"Alternativa_1": "Aceitar a ajuda e enviar minha senha.",
+	"Alternativa_2": "Negar o pedido e avisar seu amigo que ele possivelmente foi hackeado.",
+	"Alternativa_3": "Ignorá-lo.",
+	"Alternativa_4": "Aceitar e divulgar para o seu grupo que o amigo em questão pode ajudá-los também.",
+	"resposta": 2,
+	"nivel": "Intermediário",
+	"link_video": ""
+	},
+
+	{
+	"Titulo": "Qual das senhas abaixo é a mais segura?",
+	"Alternativa_1": "banana",
+	"Alternativa_2": "30071997",
+	"Alternativa_3": "morango21",
+	"Alternativa_4": "Three@r_5",
+	"resposta": 4,
+	"nivel": "Intermediário",
+	"link_video": ""
+	},
+
+	{
+	"Titulo": "Após algum tempo que você conversa com uma pessoa de um fórum ou bate-papo ela propõe que vocês se encontrem na vida real. Qual lugar para conhecê-la pessoalmente você escolheria: um parque, um cinema ou uma lanchonete?",
+	"Alternativa_1": "No cinema, pois é um lugar mais reservado.",
+	"Alternativa_2": "No parque, pois é um lugar público com mais pessoas por perto.",
+	"Alternativa_3": "No restaurante, nada melhor do que comer algo juntos!",
+	"Alternativa_4": "Nenhum! Os “amigos da Internet” podem não ser quem eles dizem que são. Portanto você nunca deve marcar um encontro com eles na vida real.",
+	"resposta": 4,
+	"nivel": "Intermediário.",
+	"link_video": ""
+	},
+	{
+	"Titulo": "Em uma rede social você recebe uma solicitação de amizade de um individuo desconhecido, qual ação é a correta a se tomar?",
+	"Alternativa_1": "Recusar a solicitação e observar caso volte a se repetir.",
+	"Alternativa_2": "Adicionar a sua rede pois é sempre bom sonhecer pessoas novas.",
+    	"Alternativa_3": "Adicionar a sua rede e recomendar que seus colegas façam o mesmo",
+    	"Alternativa_4": "Ignorar a solicitação mas compartilhar com seus colegas pois algum deles pode se interessar ",
+    	"resposta": 1,
+    	"nivel": "Básico.",
+    	"link_video": ""
+  	}
+	]
+
+
+
+
+
