@@ -43,12 +43,12 @@ button {
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
+    padding: 9px;
     width: 500px;
-    height: 200px;
+    height: auto;
     background: #0FBFFF;
     border-radius: 20px;
     color: #FFFFFF;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -69,6 +69,16 @@ button {
     text-align: center;
 }
 
-.conclusionBoxText {
+#conclusionBoxText {
     font-size: x-large;
+}
+
+#wrongAnswerHelp {
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(179, 13, 13);
+}
+
+a {
+    color: #ffff;
 }
