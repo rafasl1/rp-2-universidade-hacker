@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/seletor.css">
+    <script src="../scripts/selectOption.js"></script>
+    <title>Seletor de dificuldade</title>
+</head>
+<body>
+    <form method="GET" action='pergunta.html'>
+        <div id="options">
+            <input type="radio" id="alternativa1" name="alternativa" value="a" class="questionInputRadio">
+            <label for="alternativa1" onclick="selectOption('firstOption')">
+                <div class="questionOption" id="firstOption">
+                    Carinha do TI
+                </div>
+            </label>
+
+            <input type="radio" id="alternativa2" name="alternativa" value="b" class="questionInputRadio">
+            <label for="alternativa2">
+                <div class="questionOption" id="SecondOption" onclick="selectOption('SecondOption')">
+                    Tio da Informática
+                </div>
+            </label>
+
+            <input type="radio" id="alternativa3" name="alternativa" value="c" class="questionInputRadio">
+            <label for="alternativa3">
+                <div class="questionOption" id="thirdOption" onclick="selectOption('thirdOption')">
+                    Primo que conserta o Wi-Fi
+                </div>
+            </label>
+
+            <input type="radio" id="alternativa4" name="alternativa" value="d" class="questionInputRadio">
+            <label for="alternativa4">
+                <div class="questionOption" id="fourthOption" onclick="selectOption('fourthOption')">
+                    Hackeia a NASA
+                </div>
+            </label>
+        </div>
+    </form> 
+</body>
+</html>
