@@ -85,9 +85,13 @@ h4 {
     width: 200px;
     height: 70px;
     font-size: 25px;
-    transition: 0.5s;
+    transition: 0.3s;
     display: flex;
     justify-content: center;
+}
+
+#submitButton:hover {
+    background-color: #0572c5;
 }
 
 ::-webkit-input-placeholder {
