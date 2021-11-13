@@ -91,3 +91,86 @@ h1 {
     margin-top: 3%;
     border-radius: 5px;
 }
+
+#backToMenu {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#backToMenu a {
+    text-decoration: none;
+}
+
+#backButton {
+    color: #FFFFFF;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    font-size: x-large;
+    transition: 0.3s;
+    opacity: 0.9;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#backButton:hover {
+    border: 2px solid white;
+    opacity: 1;
+}
+
+#backButton img {
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#backButton p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#backToMenu {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#backToMenu a {
+    text-decoration: none;
+}
+
+#backButton {
+    color: #FFFFFF;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    font-size: x-large;
+    transition: 0.3s;
+    opacity: 0.9;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#backButton:hover {
+    border: 2px solid white;
+    opacity: 1;
+}
+
+#backButton img {
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#backButton p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
