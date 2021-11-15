@@ -44,7 +44,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     padding: 9px;
-    width: 500px;
+    width: 700px;
     height: auto;
     background: #0FBFFF;
     border-radius: 20px;
@@ -73,12 +73,45 @@ button {
     font-size: x-large;
 }
 
-#wrongAnswerHelp {
+#review {
+    color: #000000;
     border: 1px solid;
     border-radius: 15px;
-    background-color: rgb(179, 13, 13);
+    background-color: #64EFD6;
+    margin: 7px;
+    padding: 7px;
+}
+
+#acertos {
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+#erros {
+    margin: 30px;
+}
+
+.reviewQuestion {
+    text-align: left;
+    margin-top: 35px;
+}
+
+.wrongQuestionAnswer {
+    color: #D23535;
+}
+
+.rightQuestionAnswer {
+    color: #0E9523;
 }
 
 a {
-    color: #ffff;
+    color: #425cf5;
+}
+
+h2 {
+    margin: 30px;
+}
+
+h3 {
+    text-align: left;
 }
