@@ -1,0 +1,140 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+body  {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+h1 {
+    padding: 40px 50px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#profile {
+    height: 100vh;
+    width: 31%;
+    background-color: #0FBFFF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profile img {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photoAndUsername {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#username-player {
+    color: white;
+    font-size: 20px;
+}
+
+#name-player {
+    color: white;
+    font-size: 30px;
+}
+
+#main-container {
+    height: 100vh;
+    width: 69%;
+    background-color: #FFE25E;
+}
+
+#buttons {
+    padding: 20px 400px 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#buttons a {
+    margin: 10px;
+}
+
+.blueButtons {
+    height: 70px;
+    width: 250px;
+    background-color: #3915B0;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.blueButtons:hover {
+    background: rgba(57, 21, 176, 0.9);;
+}
+
+#deleteAccount {
+    height: 70px;
+    width: 250px;
+    background-color: #FF960F;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#deleteAccount:hover {
+    background: #e98502;;
+}
+
+#backToMenu {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#backToMenu a {
+    text-decoration: none;
+}
+
+#backButton {
+    color: #FFFFFF;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    font-size: x-large;
+    transition: 0.3s;
+    opacity: 0.9;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#backButton:hover {
+    border: 2px solid white;
+    opacity: 1;
+}
+
+#backButton img {
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#backButton p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}

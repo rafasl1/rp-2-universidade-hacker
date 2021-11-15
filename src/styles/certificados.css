@@ -1,0 +1,176 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+body  {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+h1 {
+    padding: 40px 50px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#profile {
+    height: 100vh;
+    width: 31%;
+    background-color: #0FBFFF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profile img {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photoAndUsername {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#username-player {
+    color: white;
+    font-size: 20px;
+}
+
+#name-player {
+    color: white;
+    font-size: 30px;
+}
+
+#main-container {
+    height: 100vh;
+    width: 69%;
+    background-color: #FFE25E;
+}
+
+#certificadosDiv {
+    padding: 20px 400px 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 75%;
+}
+
+#certificados {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 100vh;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.certificado {
+    background-color: white;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 20px;
+    width: 35vh;
+    height: 18vh;
+}
+
+.risco {
+    background-color: black;
+    width: 100%;
+    height: 3%;
+    padding-top: 1%;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+
+#backToMenu {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#backToMenu a {
+    text-decoration: none;
+}
+
+#backButton {
+    color: #FFFFFF;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    font-size: x-large;
+    transition: 0.3s;
+    opacity: 0.9;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#backButton:hover {
+    border: 2px solid white;
+    opacity: 1;
+}
+
+#backButton img {
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#backButton p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#backToMenu {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#backToMenu a {
+    text-decoration: none;
+}
+
+#backButton {
+    color: #FFFFFF;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    font-size: x-large;
+    transition: 0.3s;
+    opacity: 0.9;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#backButton:hover {
+    border: 2px solid white;
+    opacity: 1;
+}
+
+#backButton img {
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#backButton p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
