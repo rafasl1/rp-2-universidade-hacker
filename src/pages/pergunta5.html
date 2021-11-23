@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/pergunta.css">
+    <script src="../scripts/selectOption.js"></script>
+    <title>Pergunta</title>
+</head>
+<body>
+    <div class="questionBox">
+        <h4>
+            Após algum tempo que você conversa com uma pessoa de um fórum ou bate-papo ela propõe que vocês se encontrem na vida real. 
+            Qual lugar para conhecê-la pessoalmente você escolheria: um parque, um cinema ou uma lanchonete?
+        </h4>
+    </div>
+    
+    <form method="GET" action='conclusao.html'>
+        <div id="options">
+            <input type="radio" id="alternativa1" name="alternativa" value="a" class="questionInputRadio">
+            <label for="alternativa1">
+                <div class="questionOption" id="firstOption" onclick="selectOption('firstOption')">
+                    No cinema, pois é um lugar mais reservado
+                </div>
+            </label>
+
+            <input type="radio" id="alternativa2" name="alternativa" value="b" class="questionInputRadio">
+            <label for="alternativa2">
+                <div class="questionOption" id="SecondOption" onclick="selectOption('SecondOption')">
+                    No parque, pois é um lugar público com mais pessoas por perto
+                </div>
+            </label>
+
+            <input type="radio" id="alternativa3" name="alternativa" value="c" class="questionInputRadio">
+            <label for="alternativa3">
+                <div class="questionOption" id="thirdOption" onclick="selectOption('thirdOption')">
+                    No restaurante, nada melhor do que comer algo juntos!
+                </div>
+            </label>
+
+            <input type="radio" id="alternativa4" name="alternativa" value="d" class="questionInputRadio">
+            <label for="alternativa4">
+                <div class="questionOption" id="fourthOption" onclick="selectOption('fourthOption')">
+                    Nenhum! Os “amigos da Internet” podem não ser quem eles dizem que são. 
+                    Portanto, você nunca deve marcar um encontro com eles na vida real.
+                </div>
+            </label>
+        </div>
+        <div id="submitButtonDiv">
+            <input type="submit" value="Submeter" id="submitButton">
+        </div>
+    </form> 
+</body>
+<script>
+    document.onload(getFinalQuestion());
+</script>
+</html>
