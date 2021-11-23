@@ -10,38 +10,33 @@
 </head>
 <body>
     <div class="questionBox">
-        <h4>
-            O que deve ser feito após receber um email com um assunto hilário que obviamente é scam?
+        <h4 id="question">
         </h4>
     </div>
     
-    <form method="GET" action='pergunta2.html'>
+    <form method="GET" action='javascript:responder()'>
         <div id="options">
             <input type="radio" id="alternativa1" name="alternativa" value="a" class="questionInputRadio">
             <label for="alternativa1" onclick="selectOption('firstOption')">
                 <div class="questionOption" id="firstOption">
-                    Deletá-lo e esquecer
                 </div>
             </label>
 
             <input type="radio" id="alternativa2" name="alternativa" value="b" class="questionInputRadio">
             <label for="alternativa2">
                 <div class="questionOption" id="SecondOption" onclick="selectOption('SecondOption')">
-                    Evitar clicar em qualquer link e marcá-lo como spam
                 </div>
             </label>
 
             <input type="radio" id="alternativa3" name="alternativa" value="c" class="questionInputRadio">
             <label for="alternativa3">
                 <div class="questionOption" id="thirdOption" onclick="selectOption('thirdOption')">
-                    Enviá-lo aos amigos para que eles também riam, mas avisá-los para não clicarem em nenhum link
                 </div>
             </label>
 
             <input type="radio" id="alternativa4" name="alternativa" value="d" class="questionInputRadio">
             <label for="alternativa4">
                 <div class="questionOption" id="fourthOption" onclick="selectOption('fourthOption')">
-                    Acessar os links contidos no email
                 </div>
             </label>
         </div>
@@ -50,4 +45,7 @@
         </div>
     </form> 
 </body>
+<script>
+    document.onload(getFirstQuestion());
+</script>
 </html>
