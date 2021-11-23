@@ -1,5 +1,7 @@
 function responder() {
-  const playerId = JSON.parse(localStorage.getItem("Player logado")).idPlayer;
+  const player = JSON.parse(localStorage.getItem("Player Logado"));
+  console.log(player)
+  const playerId = player.idPlayer;
 
   let awnser = document.getElementById('selectedOption').innerText;
 
@@ -23,7 +25,6 @@ function responder() {
   })
     .then(response => response.json())
     .then(response => {
-      // tenho que pedir pro And a próxima pergunta por aqui
       console.log(response)
       localStorage.setItem("Questao2", JSON.stringify(response));
       localStorage.removeItem("Questao1");
