@@ -1,11 +1,10 @@
 function responder() {
   const player = JSON.parse(localStorage.getItem("Player Logado"));
-  console.log(player)
   const playerId = player.idPlayer;
 
   let awnser = document.getElementById('selectedOption').innerText;
-
   const questionData = JSON.parse(localStorage.getItem("Questao1"));
+
   if (awnser == questionData.alternativa1) awnser = 1;
   else if (awnser == questionData.alternativa2) awnser = 2;
   else if (awnser == questionData.alternativa3) awnser = 3;
@@ -23,16 +22,8 @@ function responder() {
       'Content-Type': 'application/json'
     }
   })
-    .then(response => response.json())
-    .then(response => {
-      console.log(response)
-      localStorage.setItem("Questao2", JSON.stringify(response));
-      localStorage.removeItem("Questao1");
-      document.location.href = "pergunta2.html";
-    })
-    .catch(error => {
-      throw new Error(`Error on sign up: ${error}`);
-    })
+
+  localStorage.removeItem("Questao1");
   document.location.href = "pergunta2.html";
 }
 
