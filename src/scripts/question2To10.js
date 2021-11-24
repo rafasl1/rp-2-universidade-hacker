@@ -1,5 +1,4 @@
 function getQuestion() {
-  // bate na api com base na dificuldade que a pessoa quer
   const difficulty = localStorage.getItem("Dificuldade em jogo");
   fetch(`http://localhost:8080/dificuldade?opcao=${difficulty}`)
     .then(response => response.json())
