@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/index.css">
     <script src="https://kit.fontawesome.com/49bd61e109.js" crossorigin="anonymous"></script>
+    <script src="/src/scripts/requestsTop10.js"></script>
     <title>Menu - Universidade Hacker</title>
 </head>
 <body>
     <div id="menu">
         <div id="logoAndPlay">
             <img src="../unihackerlogo.png"><br>
-            <a href="pergunta.html"><button type="button" id="playButton">Jogar!</button></a>
+            <a href="seletor.html"><button type="button" id="playButton">Jogar!</button></a>
+            <p id="conteudo"></p>
         </div>
 
         <div id="menuBody">
@@ -22,26 +24,6 @@
 
             <div id="ranking">
                 <h2 class="rankingTitle">Ranking (Top 5)</h2>
-                <div class="playerInRanking">
-                    <i class="fas fa-user-circle"></i>
-                    <div>Player 1</div>
-                </div>
-                <div class="playerInRanking">
-                    <i class="fas fa-user-circle"></i>
-                    <div>Player 2</div>
-                </div>
-                <div class="playerInRanking">
-                    <i class="fas fa-user-circle"></i>
-                    <div>Player 3</div>
-                </div>
-                <div class="playerInRanking">
-                    <i class="fas fa-user-circle"></i>
-                    <div>Player 4</div>
-                </div>
-                <div class="playerInRanking">
-                    <i class="fas fa-user-circle"></i>
-                    <div>Player 5</div>
-                </div>
             </div>
 
             <div id="myDiv">
@@ -50,6 +32,8 @@
             </div>
         </div>
     </div>
-    
 </body>
+<script>
+    localStorage.removeItem("Dificuldade em jogo")
+</script>
 </html>

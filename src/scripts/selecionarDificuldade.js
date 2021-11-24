@@ -1,30 +1,42 @@
-function responder() {
-  const player = JSON.parse(localStorage.getItem("Player Logado"));
-  const playerId = player.idPlayer;
+function startQuiz() {
+  let dificuldade = document.getElementById('selectedOption').innerText
 
-  let awnser = document.getElementById('selectedOption').innerText;
-  const questionData = JSON.parse(localStorage.getItem("Questao1"));
+  switch (dificuldade) {
+    case 'Carinha do TI':
+      dificuldade = "carinha-do-ti"
+      break;
+    case 'Tio da Informática':
+      dificuldade = "tio-da-informatica"
+      break;
+    case 'Primo que conserta o Wi-Fi':
+      dificuldade = "primo-que-conserta-o-wifi"
+      break;
+    case 'Hackeia a NASA':
+      dificuldade = "hackeia-a-nasa"
+      break;
+    default:
+      throw new Error("Invalid option");
+  }
 
-  if (awnser == questionData.alternativa1) awnser = 1;
-  else if (awnser == questionData.alternativa2) awnser = 2;
-  else if (awnser == questionData.alternativa3) awnser = 3;
-  else if (awnser == questionData.alternativa4) awnser = 4;
-  else throw new Error("Invalid option");
+  console.log(dificuldade)
 
-  fetch(`http://localhost:8080/resposta?id=${playerId}`, {
-    method: "POST",
-    body: JSON.stringify({
-      idQuestao: JSON.parse(localStorage.getItem("Questao1")).idQuestao,
-      alternativa: awnser
-    }),
+  fetch(`http://localhost:8080/dificuldade?opcao=${dificuldade}`, {
+    method: "GET",
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     }
   })
-
-  localStorage.removeItem("Questao1");
-  document.location.href = "pergunta2.html";
+    .then(response => response.json())
+    .then(response => {
+      console.log(response)
+      localStorage.setItem("Questao1", JSON.stringify(response));
+      localStorage.setItem("Dificuldade em jogo", dificuldade);
+      document.location.href = "pergunta.html";
+    })
+    .catch(error => {
+      throw new Error(`Erro selecionando dificuldade: ${error}`);
+    })
 }
 
 function selectOption(option) {
@@ -57,20 +69,5 @@ function selectOption(option) {
       throw new Error("Invalid option");
   }
   document.getElementById(option).setAttribute("id", "selectedOption");
-}
-
-function getFirstQuestion() {
-  const question1 = JSON.parse(localStorage.getItem("Questao1"));
-
-  const option1Text = question1.alternativa1;
-  const option2Text = question1.alternativa2;
-  const option3Text = question1.alternativa3;
-  const option4Text = question1.alternativa4;
-  const question = question1.pergunta;
-
-  document.getElementById('firstOption').innerText = option1Text;
-  document.getElementById('SecondOption').innerText = option2Text;
-  document.getElementById('thirdOption').innerText = option3Text;
-  document.getElementById('fourthOption').innerText = option4Text;
-  document.getElementById('question').innerText = question;
+  startQuiz();
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/conclusao.css">
+    <script src="../scripts/finalizarQuiz.js"></script>
     <title>Conclusão do Quiz!</title>
 </head>
 <body>
@@ -15,14 +16,14 @@
     </h3>
     <div class="conclusionDataBox">
         <div id="conclusionBoxText">
-            <p>Sua pontuação: 2/4</p>
-            <p>Sua posição no Ranking: 7° de 15</p>
+            <p id="score"></p>
+            <p id="rankingPosition"></p>
         </div>
         <div id="review">
             <h2>Revisão</h2>
             <section id="acertos">
                 <h3><u>Acertos:</u></h3>
-                <div class="reviewQuestion">
+                <!-- <div class="reviewQuestion">
                     <b>Questão 1</b>
                     <p>"O que deve ser feito após receber um email com um assunto hilário que obviamente é scam?"</p>
                     <p><b class="rightQuestionAnswer">Resposta: </b>Evitar clicar em qualquer link e marcá-lo como spam</p>
@@ -31,11 +32,11 @@
                     <b>Questão 5</b>
                     <p>"O que deve ser feito após receber um email com um assunto hilário que obviamente é scam?"</p>
                     <p><b class="rightQuestionAnswer">Resposta: </b>Evitar clicar em qualquer link e marcá-lo como spam</p>
-                </div>
+                </div> -->
             </section>
             <section id="erros">
                 <h3><u>Erros:</u></h3>
-                <div class="reviewQuestion">
+                <!-- <div class="reviewQuestion">
                     <b>Questão 2</b>
                     <p>"Você acessa seu email pelo computador da biblioteca. O que deveria fazer para ter certeza de que sua conta está segura?"</p>
                     <p><b class="wrongQuestionAnswer">Resposta selecionada: </b>Sair da conta ao acabar o que precisava fazer</p>
@@ -46,14 +47,17 @@
                     <p>"Você acessa seu email pelo computador da biblioteca. O que deveria fazer para ter certeza de que sua conta está segura?"</p>
                     <p><b class="wrongQuestionAnswer">Resposta selecionada: </b>Sair da conta ao acabar o que precisava fazer</p>
                     <p><b class="rightQuestionAnswer">Resposta correta: </b>Usar o navegador em uma aba anônima e sair da conta ao acabar o que precisava fazer</p>
-                </div>
+                </div> -->
             </section>
             
         </div>
     </div>
     <div id="conclusionButtons">
         <a href="index.html"><button id="menuButton">Menu principal</button></a>
-        <a href="pergunta.html"><button id="playAgainButton">Jogar de novo!</button></a>
+        <a href="seletor.html"><button id="playAgainButton">Jogar de novo!</button></a>
     </div>
 </body>
+<script>
+    document.onload(getFeedback());
+</script>
 </html>
