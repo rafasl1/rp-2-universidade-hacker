@@ -14,9 +14,10 @@ function fazerLogin() {
     .then(response => {
       console.log(response);
       localStorage.setItem("Player Logado", JSON.stringify(response));
+      document.location.href = "index.html";
     })
     .catch(error => {
+      alert("Erro ao fazer login, tente novamente");
       throw new Error(`Error on sign in: ${error}`);
     })
-  document.location.href = "index.html";
 }
