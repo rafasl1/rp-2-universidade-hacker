@@ -15,9 +15,9 @@ function cadastrarPlayer() {
     .then(response => {
       console.log(response);
       localStorage.setItem("Player Logado", JSON.stringify(response));
+      document.location.href = "index.html";
     })
     .catch(error => {
       throw new Error(`Error on sign up: ${error}`);
     })
-  document.location.href = "index.html";
 }

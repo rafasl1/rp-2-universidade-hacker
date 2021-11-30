@@ -51,47 +51,52 @@ function getFeedback() {
   wrongAwnserBold.setAttribute("class", "wrongQuestionAnswer");
   wrongAwnserBold.innerHTML = "Resposta selecionada: ";
 
+  let hits = 1;
+  let mistakes = 1;
+
   for (const rightQuestion of rightQuestions) {
-    console.log("questao acertada: ", rightQuestion)
     const rightQuestionDiv = document.createElement("div");
     rightQuestionDiv.setAttribute("class", "reviewQuestion");
+
+    const rightQuestionTitle = document.createElement("h4");
+    rightQuestionTitle.innerHTML = "Acerto " + hits + ": ";
+    rightQuestionDiv.appendChild(rightQuestionTitle);
 
     const question = document.createElement("p");
     question.innerText = "Pergunta: " + rightQuestion.perguntaTexto;
     rightQuestionDiv.appendChild(question);
 
     const awnser = document.createElement("p");
-    rightQuestionDiv.appendChild(awnserBold);
-    awnser.innerText = rightQuestion.respostaTexto;
+    awnser.innerText = "Resposta: " + rightQuestion.respostaTexto;
     rightQuestionDiv.appendChild(awnser);
 
     document.getElementById("acertos").appendChild(rightQuestionDiv);
+    hits++;
   }
 
   for (const wrongQuestion of wrongQuestions) {
-    console.log("questao errada: ", wrongQuestion)
-
     const wrongQuestionDiv = document.createElement("div");
     wrongQuestionDiv.setAttribute("class", "reviewQuestion");
+
+    const wrongQuestionTitle = document.createElement("h4");
+    wrongQuestionTitle.innerHTML = "Erro " + mistakes + ": ";
+    wrongQuestionDiv.appendChild(wrongQuestionTitle);
 
     const question = document.createElement("p");
     question.innerText = "Pergunta: " + wrongQuestion.perguntaTexto;
     wrongQuestionDiv.appendChild(question);
 
     const righAwnser = document.createElement("p");
-    awnserBold.innerText = "Resposta correta: ";
-    wrongQuestionDiv.appendChild(awnserBold);
-    righAwnser.innerText = wrongQuestion.respostaCertaTexto;
+    righAwnser.innerText = "Resposta correta: " + wrongQuestion.respostaCertaTexto;
     wrongQuestionDiv.appendChild(righAwnser);
 
     const wrongAwnser = document.createElement("p");
-    wrongQuestionDiv.appendChild(wrongAwnserBold);
-    wrongAwnser.innerText = wrongQuestion.alternativaRespondidaTexto;
+    wrongAwnser.innerText = "Resposta selecionada: " + wrongQuestion.alternativaRespondidaTexto;
     wrongQuestionDiv.appendChild(wrongAwnser);
 
     document.getElementById("erros").appendChild(wrongQuestionDiv);
+    mistakes++;
   }
 
   localStorage.removeItem("Dificuldade em jogo")
-  // localStorage.removeItem("Resultado");
 }

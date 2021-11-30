@@ -16,6 +16,12 @@
             <a href="seletor.html"><button type="button" id="playButton">Jogar!</button></a>
             <p id="conteudo"></p>
         </div>
+        <div id="backToMenu">
+            <button type="button" id="backButton" onclick="logOut()">
+                <img src="../left-arrow.png" alt="back">
+                <p>Log Out</p>
+            </button>
+        </div>
 
         <div id="menuBody">
             <div id="myDiv">
@@ -35,5 +41,11 @@
 </body>
 <script>
     localStorage.removeItem("Dificuldade em jogo")
+    localStorage.removeItem("Resultado");
+
+    function logOut() {
+        localStorage.removeItem("Player Logado");
+        document.location.href = "login.html";
+    }
 </script>
 </html>
