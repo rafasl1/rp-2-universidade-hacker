@@ -12,7 +12,6 @@ function fazerLogin() {
   })
     .then(response => response.json())
     .then(response => {
-      console.log(response);
       localStorage.setItem("Player Logado", JSON.stringify(response));
       document.location.href = "index.html";
     })
