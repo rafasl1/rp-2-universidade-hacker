@@ -20,7 +20,7 @@
         <div id="certificadosDiv">
             <h1>Certificados</h1>
             <div id="certificados">
-                <div class="certificado">
+                <!-- <div class="certificado">
                     <div class="risco"></div>
                     <h2><a href="">Título do certificado</a></h2>
                     <p>Nome do jogador</p>
@@ -42,7 +42,7 @@
                     <div class="risco"></div>
                     <h2><a href="">Título do certificado</a></h2>
                     <p>Nome do jogador</p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="backToMenu">
@@ -55,4 +55,85 @@
         </div>
     </div>
 </body>
+<script>
+    function renderNameAndUsername() {
+        const player = JSON.parse(localStorage.getItem("Player Logado"));
+        document.getElementById("username-player").innerHTML = player.username;
+        document.getElementById("name-player").innerHTML = player.name;
+    }
+
+    function getCertificates() {
+        const player = JSON.parse(localStorage.getItem("Player Logado"));
+        if(player.score > 0) {
+            // certificado tio da informatica
+            const divCertificado = document.createElement("div");
+            divCertificado.setAttribute("class", "certificado");
+            
+            const risco = document.createElement("div");
+            risco.setAttribute("class", "risco");
+            divCertificado.appendChild(risco);
+
+            const h2Certificado = document.createElement("h2");
+            
+            const linkCertificado = document.createElement("a");
+            linkCertificado.innerText = "Título do certificado"
+            linkCertificado.setAttribute("href", "/src/certifieds/2.jpg")
+            
+            h2Certificado.appendChild(linkCertificado)
+            divCertificado.appendChild(h2Certificado);
+
+            const playerName = document.createElement("p");
+            playerName.innerHTML = player.name;
+            divCertificado.appendChild(playerName);
+
+            const image = document.createElement("img");
+            image.setAttribute("src", "../certifieds/2.jpg")
+            image.setAttribute("width", "280")
+            divCertificado.appendChild(image);
+
+            document.getElementById("certificados").appendChild(divCertificado);
+
+            // certificado primo wifi
+            const divCertificado2 = document.createElement("div");
+            divCertificado2.setAttribute("class", "certificado");
+            
+            const risco2 = document.createElement("div");
+            risco2.setAttribute("class", "risco");
+            divCertificado2.appendChild(risco2);
+
+            const h2Certificado2 = document.createElement("h2");
+            
+            const linkCertificado2 = document.createElement("a");
+            linkCertificado2.innerText = "Título do certificado"
+            linkCertificado2.setAttribute("href", "/src/certifieds/4.jpg")
+            
+            h2Certificado2.appendChild(linkCertificado2)
+            divCertificado2.appendChild(h2Certificado2);
+
+            const playerName2 = document.createElement("p");
+            playerName2.innerHTML = player.name;
+            divCertificado2.appendChild(playerName2);
+
+            const image2 = document.createElement("img");
+            image2.setAttribute("src", "../certifieds/4.jpg")
+            image2.setAttribute("width", "280")
+            divCertificado2.appendChild(image2);
+
+            document.getElementById("certificados").appendChild(divCertificado2);
+
+        } else {
+            const noCertifiedsMessage = document.createElement("h2");
+            noCertifiedsMessage.innerHTML = "Sem certificados ainda";
+
+            document.getElementById("certificados").appendChild(noCertifiedsMessage);
+        }
+    }
+
+    function loadPageData() {
+        renderNameAndUsername();
+        getCertificates();
+    }
+
+    document.onload(loadPageData());
+</script>
 </html>

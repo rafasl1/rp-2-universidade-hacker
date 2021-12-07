@@ -80,7 +80,7 @@ h1 {
     border-radius: 20px;
     margin: 20px;
     width: 35vh;
-    height: 18vh;
+    height: auto;
 }
 
 .risco {

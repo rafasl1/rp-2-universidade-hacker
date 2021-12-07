@@ -2,9 +2,9 @@ function getTop10() {
   fetch('http://localhost:8080/top10')
     .then(response => response.json())
     .then(response => {
-      console.log(response)
+      document.getElementsByClassName("rankingTitle")[0].innerHTML = "Ranking (Top " + response.length + ")";
+
       for (let i = 0; i < response.length; i++) {
-        console.log(response[i])
         const divPlayerInRanking = document.createElement("div");
         divPlayerInRanking.setAttribute("class", "playerInRanking");
 

@@ -11,14 +11,9 @@ function startQuiz() {
     case 'Primo que conserta o Wi-Fi':
       dificuldade = "primo-que-conserta-o-wifi"
       break;
-    case 'Hackeia a NASA':
-      dificuldade = "hackeia-a-nasa"
-      break;
     default:
       throw new Error("Invalid option");
   }
-
-  console.log(dificuldade)
 
   fetch(`http://localhost:8080/dificuldade?opcao=${dificuldade}`, {
     method: "GET",
@@ -29,7 +24,6 @@ function startQuiz() {
   })
     .then(response => response.json())
     .then(response => {
-      console.log(response)
       localStorage.setItem("Questao1", JSON.stringify(response));
       localStorage.setItem("Dificuldade em jogo", dificuldade);
       document.location.href = "pergunta.html";
@@ -40,30 +34,22 @@ function startQuiz() {
 }
 
 function selectOption(option) {
+  console.log(option)
   switch (option) {
     case 'firstOption':
       document.getElementById(option).style.border = "8px solid #0FBFFF";
       document.getElementById('SecondOption').style.border = "";
       document.getElementById('thirdOption').style.border = "";
-      document.getElementById('fourthOption').style.border = "";
       break;
     case 'SecondOption':
       document.getElementById(option).style.border = "8px solid #FF960F";
       document.getElementById('firstOption').style.border = "";
       document.getElementById('thirdOption').style.border = "";
-      document.getElementById('fourthOption').style.border = "";
       break;
     case 'thirdOption':
       document.getElementById(option).style.border = "8px solid #1E91E8";
       document.getElementById('firstOption').style.border = "";
       document.getElementById('SecondOption').style.border = "";
-      document.getElementById('fourthOption').style.border = "";
-      break;
-    case 'fourthOption':
-      document.getElementById(option).style.border = "8px solid #3915B0";
-      document.getElementById('firstOption').style.border = "";
-      document.getElementById('SecondOption').style.border = "";
-      document.getElementById('thirdOption').style.border = "";
       break;
     default:
       throw new Error("Invalid option");
