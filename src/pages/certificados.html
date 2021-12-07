@@ -64,7 +64,18 @@
 
     function getCertificates() {
         const player = JSON.parse(localStorage.getItem("Player Logado"));
-        if(player.score > 0) {
+        const top10 = JSON.parse(localStorage.getItem("Top 10"));
+
+        let showCertifieds = false;
+
+        for(let i = 0; i < top10.length; i++) {
+            if(top10[i] == player.name && i != top10.length - 1) {
+                showCertifieds = true;
+                break;
+            }
+        }
+
+        if(showCertifieds) {
             // certificado tio da informatica
             const divCertificado = document.createElement("div");
             divCertificado.setAttribute("class", "certificado");
@@ -76,7 +87,7 @@
             const h2Certificado = document.createElement("h2");
             
             const linkCertificado = document.createElement("a");
-            linkCertificado.innerText = "Título do certificado"
+            linkCertificado.innerText = "Tio da Informática"
             linkCertificado.setAttribute("href", "/src/certifieds/2.jpg")
             
             h2Certificado.appendChild(linkCertificado)
@@ -104,7 +115,7 @@
             const h2Certificado2 = document.createElement("h2");
             
             const linkCertificado2 = document.createElement("a");
-            linkCertificado2.innerText = "Título do certificado"
+            linkCertificado2.innerText = "Primo que conserta o Wifi"
             linkCertificado2.setAttribute("href", "/src/certifieds/4.jpg")
             
             h2Certificado2.appendChild(linkCertificado2)

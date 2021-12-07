@@ -2,6 +2,8 @@ function getTop10() {
   fetch('http://localhost:8080/top10')
     .then(response => response.json())
     .then(response => {
+      localStorage.setItem("Top 10", JSON.stringify(response));
+
       document.getElementsByClassName("rankingTitle")[0].innerHTML = "Ranking (Top " + response.length + ")";
 
       for (let i = 0; i < response.length; i++) {
