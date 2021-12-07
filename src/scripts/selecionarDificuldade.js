@@ -18,8 +18,6 @@ function startQuiz() {
       throw new Error("Invalid option");
   }
 
-  console.log(dificuldade)
-
   fetch(`http://localhost:8080/dificuldade?opcao=${dificuldade}`, {
     method: "GET",
     headers: {
@@ -29,7 +27,6 @@ function startQuiz() {
   })
     .then(response => response.json())
     .then(response => {
-      console.log(response)
       localStorage.setItem("Questao1", JSON.stringify(response));
       localStorage.setItem("Dificuldade em jogo", dificuldade);
       document.location.href = "pergunta.html";
